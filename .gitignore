@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+# never commit package samples
+work/
+pkg/
+*.tgz
+*.zip

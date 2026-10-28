@@ -1,0 +1,50 @@
+{
+  "meta_has_install_hook": {
+    "caught": 0.911,
+    "missed": 0.086
+  },
+  "meta_has_readme": {
+    "caught": 0.263,
+    "missed": 0.727
+  },
+  "meta_has_repository": {
+    "caught": 0.129,
+    "missed": 0.334
+  },
+  "meta_description_len": {
+    "caught": 43.209,
+    "missed": 63.54
+  },
+  "meta_n_files": {
+    "caught": 14.589,
+    "missed": 49.472
+  },
+  "code_child_process": {
+    "caught": 0.357,
+    "missed": 0.334
+  },
+  "code_net_module": {
+    "caught": 0.582,
+    "missed": 0.126
+  },
+  "code_http_request": {
+    "caught": 0.495,
+    "missed": 0.436
+  },
+  "code_env_access": {
+    "caught": 0.402,
+    "missed": 0.38
+  },
+  "obf_hex_identifier": {
+    "caught": 0.082,
+    "missed": 0.031
+  },
+  "meta_n_js_files": {
+    "caught": 8.235,
+    "missed": 36.006
+  },
+  "n": {
+    "caught": 574,
+    "missed": 326
+  }
+}

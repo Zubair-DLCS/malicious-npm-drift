@@ -1,0 +1,292 @@
+{
+  "n_samples": 5400,
+  "n_features": 59,
+  "counts": {
+    "2024_ben": 900,
+    "2024_mal": 900,
+    "2025_ben": 900,
+    "2025_mal": 900,
+    "2026_ben": 900,
+    "2026_mal": 900
+  },
+  "malicious_unique_groups": 1683,
+  "malicious_largest_group": 103,
+  "Q1_random_5fold": {
+    "logreg": {
+      "roc_auc": 0.9594,
+      "f1": 0.9034,
+      "tpr": 0.8663,
+      "fpr": 0.0515,
+      "tpr_at_1pct_fpr": 0.6719,
+      "precision_at_1pct_prevalence": 0.1453
+    },
+    "random_forest": {
+      "roc_auc": 0.9839,
+      "f1": 0.9455,
+      "tpr": 0.9259,
+      "fpr": 0.0326,
+      "tpr_at_1pct_fpr": 0.863,
+      "precision_at_1pct_prevalence": 0.223
+    },
+    "grad_boosting": {
+      "roc_auc": 0.984,
+      "f1": 0.9474,
+      "tpr": 0.9341,
+      "fpr": 0.0378,
+      "tpr_at_1pct_fpr": 0.8633,
+      "precision_at_1pct_prevalence": 0.1998
+    }
+  },
+  "Q2_grouped_5fold": {
+    "logreg": {
+      "roc_auc": 0.9564,
+      "f1": 0.8955,
+      "tpr": 0.8567,
+      "fpr": 0.0567,
+      "tpr_at_1pct_fpr": 0.5796,
+      "precision_at_1pct_prevalence": 0.1325
+    },
+    "random_forest": {
+      "roc_auc": 0.9795,
+      "f1": 0.9359,
+      "tpr": 0.9059,
+      "fpr": 0.03,
+      "tpr_at_1pct_fpr": 0.7881,
+      "precision_at_1pct_prevalence": 0.2337
+    },
+    "grad_boosting": {
+      "roc_auc": 0.9755,
+      "f1": 0.9277,
+      "tpr": 0.9,
+      "fpr": 0.0404,
+      "tpr_at_1pct_fpr": 0.8056,
+      "precision_at_1pct_prevalence": 0.1838
+    }
+  },
+  "Q3_temporal": {
+    "train_2024__test_2025__logreg": {
+      "roc_auc": 0.8682,
+      "f1": 0.8252,
+      "tpr": 0.7211,
+      "fpr": 0.0267,
+      "tpr_at_1pct_fpr": 0.6344,
+      "precision_at_1pct_prevalence": 0.2145
+    },
+    "train_2024__test_2025__random_forest": {
+      "roc_auc": 0.9501,
+      "f1": 0.8138,
+      "tpr": 0.6922,
+      "fpr": 0.0089,
+      "tpr_at_1pct_fpr": 0.7,
+      "precision_at_1pct_prevalence": 0.4403
+    },
+    "train_2024__test_2025__grad_boosting": {
+      "roc_auc": 0.9346,
+      "f1": 0.8233,
+      "tpr": 0.7067,
+      "fpr": 0.01,
+      "tpr_at_1pct_fpr": 0.7067,
+      "precision_at_1pct_prevalence": 0.4165
+    },
+    "train_2024__test_2026__logreg": {
+      "roc_auc": 0.8669,
+      "f1": 0.7743,
+      "tpr": 0.65,
+      "fpr": 0.0289,
+      "tpr_at_1pct_fpr": 0.5967,
+      "precision_at_1pct_prevalence": 0.1852
+    },
+    "train_2024__test_2026__random_forest": {
+      "roc_auc": 0.9051,
+      "f1": 0.772,
+      "tpr": 0.6378,
+      "fpr": 0.0144,
+      "tpr_at_1pct_fpr": 0.6289,
+      "precision_at_1pct_prevalence": 0.3084
+    },
+    "train_2024__test_2026__grad_boosting": {
+      "roc_auc": 0.8913,
+      "f1": 0.7769,
+      "tpr": 0.6422,
+      "fpr": 0.0111,
+      "tpr_at_1pct_fpr": 0.6422,
+      "precision_at_1pct_prevalence": 0.3686
+    },
+    "train_2024-2025__test_2026__random_forest": {
+      "roc_auc": 0.9417,
+      "f1": 0.8676,
+      "tpr": 0.7867,
+      "fpr": 0.0267,
+      "tpr_at_1pct_fpr": 0.7178,
+      "precision_at_1pct_prevalence": 0.2296
+    }
+  },
+  "Q4_feature_groups": {
+    "metadata_only": {
+      "random_split": {
+        "roc_auc": 0.9755,
+        "f1": 0.9241,
+        "tpr": 0.8933,
+        "fpr": 0.04,
+        "tpr_at_1pct_fpr": 0.8333,
+        "precision_at_1pct_prevalence": 0.1841
+      },
+      "temporal": {
+        "roc_auc": 0.8684,
+        "f1": 0.7776,
+        "tpr": 0.6489,
+        "fpr": 0.02,
+        "tpr_at_1pct_fpr": 0.6311,
+        "precision_at_1pct_prevalence": 0.2468
+      }
+    },
+    "code_only": {
+      "random_split": {
+        "roc_auc": 0.9072,
+        "f1": 0.8638,
+        "tpr": 0.7919,
+        "fpr": 0.0415,
+        "tpr_at_1pct_fpr": 0.7107,
+        "precision_at_1pct_prevalence": 0.1617
+      },
+      "temporal": {
+        "roc_auc": 0.793,
+        "f1": 0.5872,
+        "tpr": 0.4244,
+        "fpr": 0.0211,
+        "tpr_at_1pct_fpr": 0.3878,
+        "precision_at_1pct_prevalence": 0.1688
+      }
+    },
+    "obfuscation_only": {
+      "random_split": {
+        "roc_auc": 0.9326,
+        "f1": 0.8599,
+        "tpr": 0.8207,
+        "fpr": 0.0881,
+        "tpr_at_1pct_fpr": 0.6496,
+        "precision_at_1pct_prevalence": 0.086
+      },
+      "temporal": {
+        "roc_auc": 0.7006,
+        "f1": 0.4393,
+        "tpr": 0.2933,
+        "fpr": 0.0422,
+        "tpr_at_1pct_fpr": 0.1922,
+        "precision_at_1pct_prevalence": 0.0656
+      }
+    },
+    "code_and_obfuscation": {
+      "random_split": {
+        "roc_auc": 0.9671,
+        "f1": 0.9114,
+        "tpr": 0.873,
+        "fpr": 0.0426,
+        "tpr_at_1pct_fpr": 0.7933,
+        "precision_at_1pct_prevalence": 0.1715
+      },
+      "temporal": {
+        "roc_auc": 0.875,
+        "f1": 0.6584,
+        "tpr": 0.4989,
+        "fpr": 0.0167,
+        "tpr_at_1pct_fpr": 0.4278,
+        "precision_at_1pct_prevalence": 0.2322
+      }
+    },
+    "all": {
+      "random_split": {
+        "roc_auc": 0.9839,
+        "f1": 0.9455,
+        "tpr": 0.9259,
+        "fpr": 0.0326,
+        "tpr_at_1pct_fpr": 0.863,
+        "precision_at_1pct_prevalence": 0.223
+      },
+      "temporal": {
+        "roc_auc": 0.9051,
+        "f1": 0.772,
+        "tpr": 0.6378,
+        "fpr": 0.0144,
+        "tpr_at_1pct_fpr": 0.6289,
+        "precision_at_1pct_prevalence": 0.3084
+      }
+    }
+  },
+  "Q6_top_shap_features_on_newest_year": {
+    "code_child_process_per_kb": 0.0477,
+    "meta_has_install_hook": 0.0394,
+    "meta_install_hook_len": 0.0384,
+    "meta_hook_runs_node": 0.0352,
+    "meta_n_files": 0.0323,
+    "code_fs_write_per_kb": 0.0316,
+    "meta_js_kb": 0.0291,
+    "code_exec_call_per_kb": 0.026,
+    "code_child_process": 0.0256,
+    "meta_has_repository": 0.0251
+  },
+  "Q6_top_rf_importance": {
+    "code_child_process_per_kb": 0.0935,
+    "code_fs_write_per_kb": 0.0647,
+    "code_exec_call_per_kb": 0.0614,
+    "code_child_process": 0.0557,
+    "meta_has_install_hook": 0.0531,
+    "meta_install_hook_len": 0.0515,
+    "code_fs_write": 0.0432,
+    "meta_n_files": 0.04,
+    "meta_has_repository": 0.0366,
+    "obf_whitespace_ratio": 0.035
+  },
+  "Q6_malware_feature_drift": {
+    "meta_description_len": {
+      "ks": 0.629,
+      "mean_2024": 7.7744,
+      "mean_2026": 50.5733
+    },
+    "code_fs_write_per_kb": {
+      "ks": 0.599,
+      "mean_2024": 0.3208,
+      "mean_2026": 0.0292
+    },
+    "code_fs_write": {
+      "ks": 0.507,
+      "mean_2024": 0.6244,
+      "mean_2026": 0.1178
+    },
+    "code_child_process_per_kb": {
+      "ks": 0.481,
+      "mean_2024": 0.1198,
+      "mean_2026": 0.095
+    },
+    "code_exec_call_per_kb": {
+      "ks": 0.456,
+      "mean_2024": 0.1199,
+      "mean_2026": 0.1293
+    },
+    "meta_n_dependencies": {
+      "ks": 0.444,
+      "mean_2024": 4.4178,
+      "mean_2026": 1.4911
+    },
+    "meta_n_dev_dependencies": {
+      "ks": 0.42,
+      "mean_2024": 4.0111,
+      "mean_2026": 1.4822
+    },
+    "obf_mean_top5_string_entropy": {
+      "ks": 0.411,
+      "mean_2024": 3.9066,
+      "mean_2026": 3.7366
+    },
+    "obf_long_line_ratio": {
+      "ks": 0.37,
+      "mean_2024": 0.0178,
+      "mean_2026": 0.0252
+    },
+    "obf_max_line_len": {
+      "ks": 0.368,
+      "mean_2024": 1366.5244,
+      "mean_2026": 10233.7578
+    }
+  }
+}
